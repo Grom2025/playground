@@ -310,17 +310,17 @@ ports=80,443/tcp
 ufw app list
 ```
 
-Включает файрвол
-
-```
-ufw enable
-```
-
 Разрешает сервисы
 
 ```
 ufw allow 'Nginx Full'
 ufw allow 'OpenSSH'
+```
+
+Включает файрвол
+
+```
+ufw enable
 ```
 
 Проверяет статус
