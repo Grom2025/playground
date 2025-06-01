@@ -1,5 +1,15 @@
 # Пользователь
 
+```
+sudo chown -R www-data:www-data /var/www/
+sudo find /var/www/ -type d -exec chmod 755 {} +
+sudo find /var/www/ -type f -exec chmod 644 {} +
+sudo find /var/www/sformula.ru/storage -type d -exec chmod 775 {} + 
+sudo find /var/www/sformula.ru/bootstrap/cache -type d -exec chmod 775 {} +
+sudo find /var/www/sformula.ru/storage -type f -exec chmod 664 {} + 
+sudo find /var/www/sformula.ru/bootstrap/cache -type f -exec chmod 664 {} +
+```
+
 Добавляет пользователя
 
 ```
